@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math';
 
 void exercicio1(a, b, c){
@@ -11,7 +12,7 @@ void exercicio1(a, b, c){
   
   var concavidade = "";
   if(a>0){
-    concavidade = "A concavidade é voltadada para cima";
+    concavidade = "A concavidade é voltada para cima";
   }else{
     if(a<0){
       concavidade = "A concavidade é voltada para baixo";
@@ -25,17 +26,17 @@ void exercicio1(a, b, c){
 
 
 double exercicio2(a, b){
-  var resultado = a;
-  for(int x=1;x<b;x++){
-    resultado = resultado*a;
+  double resultado = a;
+  for(double x=1;x<b;x++){
+    resultado = resultado * a;
   }
   print("Autora: Jéssica Moreira | Data de nascimento: 09/03/2002");
   return resultado;
 }
 
 double exercicio3(n){
-  var fatorial=n;
-  for(int x=n-1; x>0; x--){
+  double fatorial = n;
+  for(double x=n-1; x>0; x--){
     fatorial = fatorial*x;
   }
   print("Autora: Jéssica Moreira | Data de nascimento: 09/03/2002");
@@ -56,11 +57,11 @@ double exercicio4(n){
 }
 
 double exercicio5(combustivel){
-  print("Autora: Jéssica Moreira | Data de nascimento: 09/03/2002");
-  if(combustivel == "etanol"){
+  if(combustivel == "etanol" || combustivel == "Etanol"){
+    print("Autora: Jéssica Moreira | Data de nascimento: 09/03/2002");
     return 0;
   }else{
-    if(combustivel == "gasolina"){
+    if(combustivel == "gasolina" ||combustivel == "Gasolina"){
       return 1;
     }else{
       return 3;
@@ -110,7 +111,7 @@ void exercicioFuncao1(){
     }
     x++;
   }while(contador<50);
-  print("A soma dos primeiros 50 numeros pares (contando com o 0) é : $soma");
+  print("A soma dos primeiros 50 números pares (contando com o 0) é : $soma");
   print("Autora: Jéssica Moreira | Data de nascimento: 09/03/2002");
 }
 
@@ -131,22 +132,37 @@ void exercicioFuncao2(valor1, valor2){
 
 void main() {
   print("Exercicio 1:");
-  exercicio1(9,3,2);
+  print('Escolha o valor para A:');
+  double a = double.parse(stdin.readLineSync()!);
+  print('Escolha o valor para B:');
+  double b = double.parse(stdin.readLineSync()!);
+  print('Escolha o valor para C:');
+  double c = double.parse(stdin.readLineSync()!);
+  exercicio1(a,b,c);
   
   print("\nExercicio 2:");
-  double resposta2 = exercicio2(3,2);
-  print(resposta2);
+  print('Escolha o primeiro valor:');
+  double v1 = double.parse(stdin.readLineSync()!);
+  print('Escolha o segundo valor:');
+  double v2 = double.parse(stdin.readLineSync()!);
+  double resposta2 = exercicio2(v1,v2);
+  print('resultado: $resposta2');
   
   print("\nExercicio 3:");
-  double resposta3 = exercicio3(9);
+  print('Escolha o número para saber seu fatorial:');
+  double fat = double.parse(stdin.readLineSync()!);
+  double resposta3 = exercicio3(fat);
   print(resposta3);
   
   print("\nExercicio 4:");
-  double resposta4 = exercicio4(9);
+  print('Escolha um número para saber sua posição em fibonacci:');
+  int fib= int.parse(stdin.readLineSync()!);
+  double resposta4 = exercicio4(fib);
   print(resposta4);
   
   print("\nExercicio 5:");
-  var gOuA = "gasolina";
+  print("Digite 'Gasolina' ou 'Etanol'");
+  var gOuA = stdin.readLineSync();
   if(exercicio5(gOuA) == 0){
     print("Abasteça com Etanol");
   }else{
@@ -159,13 +175,13 @@ void main() {
   
   print("\nExercicio de decisão 1:");
   print("digite a idade do atleta:");
-  var aIdade = 9; //int.parse(stdin.readLineSync()!);
+  int aIdade = int.parse(stdin.readLineSync()!);
   exercicioDecisao1(aIdade);
   
   print("\nExercicio de decisão 2:");
   print("Multiplos de 3 entre 1 e 100");
-  print("Digite C para vizualizar em ordem Crescente e D para vizualizar em ordem Decrescente");
-  var resposta = "D"; //stdin.readLineSync();
+  print("Digite C para visualizar em ordem Crescente e D para visualizar em ordem Decrescente");
+  var resposta = stdin.readLineSync();
   exercicioDecisao2(resposta);
   
   print("\nExercicio de função 1:");
@@ -173,9 +189,9 @@ void main() {
   
   print("\nExercicio de função 2:");
   print("Escolha dois valores para contar de um até o outro");
-    var valor1 = 9; //int.parse(stdin.readLineSync()!);
-  var valor2 = 3; //int.parse(stdin.readLineSync()!);
+  print('Valor 1:');
+  var valor1 = int.parse(stdin.readLineSync()!);
+  print('Valor 2:');
+  var valor2 = int.parse(stdin.readLineSync()!);
   exercicioFuncao2(valor1, valor2);
 }
-
-
