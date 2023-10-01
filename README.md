@@ -9,6 +9,5 @@
   <a href="https://storyset.com/phone">Phone illustrations by Storyset</a>
 </div>
 <br>
-<p>
-  Esse é um repositório de armazenamento de exercicios para aprendizado usando Dart e Flutter para desenvolvimento. Sinta-se avontade para explorar os diferentes exercicios
-</p>
+<p>Esse é um repositório de armazenamento de exercicios para aprendizado usando Dart e Flutter para desenvolvimento mobile.</p>
+<p>Os LIBs referente ao app Frases e ao app IMC possuem seus proprios READMEs com imagens dos apps</p>
