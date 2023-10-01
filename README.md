@@ -11,4 +11,4 @@
 <br>
 <p>Esse é um repositório de armazenamento de exercicios para aprendizado usando Dart e Flutter para desenvolvimento mobile.</p>
 <p>Os LIBs referente ao app Frases e ao app IMC possuem seus proprios READMEs com imagens dos apps</p>
-<p>Para executar quaisquer aplicação basta gerar a aplicação flutter e substituir o arquivo "lib" e em alguns casos o arquivo "pubspec.yaml" e a pasta de "imagens"</p>
+<p>Para executar quaisquer aplicações basta gerar a aplicação flutter e substituir o arquivo "lib" e em alguns casos o arquivo "pubspec.yaml" e a pasta de "imagens"</p>
