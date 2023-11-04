@@ -3,7 +3,7 @@
 <p>Calcula os valores para:</p>
 <ul>
   <li>Abaixo do peso</li>
-  <li>Peso noemal</li>
+  <li>Peso normal</li>
   <li>Acima do peso</li>
   <li>Obeso</li>
   <li>Extremamente obeso</li>
