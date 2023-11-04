@@ -12,8 +12,6 @@
 <p>Converte o valor quer o usuário tenha preenchido em centimetros, quer em metros</p>
 
 <div align="center">
-  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/b5b7e833-233e-4c72-9c75-66a8c0d44951" width="34%">
-  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/42985d83-5b20-4c65-bacb-72da6741db98" width="34%">
-  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/b8d1aeff-d611-4a89-aac7-8fbc99b05c32" width="34%">
-  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/7dbc2445-a4ba-45ba-aab6-89d5605af9fa" width="34%">
+  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/97cd29d0-accd-4ce5-aa09-e59d5d73d34a" width="68%">
+  <img src="https://github.com/JessicaMoreiraS/Dart-Flutter-exercicios/assets/100448388/bb8d24f0-5818-4338-8317-605ea37a401b"  width="68%">
 </div>
